@@ -1,39 +1,29 @@
 import React from "react";
 import bg from "../../assests/images.jpg";
-import logo from "../../assests/Logo.png";
-// import Lottie from "react-lottie";
-// import animationData from "../../lottie/Animation - 1714035586431.json";
-const Register = () => {
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+import logo from "../../assests/NewLogo.png";
 
+const Register = () => {
   return (
     <div
       className="flex justify-center items-center h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="mr-[400px]">
+      <div className="mr-[200px]">
         <div className="">
-          <img src={logo} alt="Logo.png" className="w-[500px] h-[500px] rounded-xl shadow-2xl" />
-          {/* <div>
-            <Lottie options={defaultOptions} height={400} width={400} />
-          </div> */}
+          <img
+            src={logo}
+            alt="Logo.png"
+            className="w-[500px] h-[560px] rounded-xl shadow-2xl"
+          />
         </div>
       </div>
-      <div className="flex flex-col">
-        <div className="h-[35px] w-[340px] shadow-lg flex mb-4 bg-white rounded-lg">
-          <div className="bg-blue-700 w-1 h-full rounded-lg"></div>
-          <div className="flex justify-center items-center text-[15px] ml-5">
+      <div className="flex flex-col bg-white shadow-2xl rounded-lg">
+        <div className="flex justify-center items-center h-[35px] w-[340px] rounded-t-lg pt-3">
+          <div className="flex justify-center items-center text-[20px]">
             Register for this site
           </div>
         </div>
-        <div className="shadow-2xl bg-white rounded-lg p-4 w-[340px]">
+        <div className="rounded-b-lg p-4 w-[340px]">
           <form className="m-3">
             <div className="">
               <div>UserName : </div>
@@ -63,21 +53,21 @@ const Register = () => {
                 className="border h-[40px] rounded-sm mt-2 pl-2 w-full"
               />
             </div>
-            <div className="mt-3 text-[12px]">
+            <div className="mt-3 ml-1 text-[12px] text-gray-400">
               Registration confirmation will be emailed to you
             </div>
             <button className="bg-red-400 w-full rounded-md p-2 text-white mt-6">
               Register
             </button>
           </form>
-        </div>
-        <div className="mt-5 w-[340px] text-[15px]">
-          <div className="flex justify-between text-gray-400">
-            <div>
-              <button className="">Log in</button>
-            </div>
-            <div>
-              <button className="">Lost your Password</button>
+          <div className="mt-3 mx-2 text-[15px] rounded-lg">
+            <div className="flex justify-between text-blue-500">
+              <div className="p-2 rounded-lg bg-white">
+                <button className="">Log in</button>
+              </div>
+              <div className="p-2 rounded-lg bg-white">
+                <button className="">Lost your Password</button>
+              </div>
             </div>
           </div>
         </div>
